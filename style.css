@@ -23,6 +23,14 @@ body{
     border-radius: 41px;
     border: none;
     padding: 10px 20px;
+    transition: 0.5s;
+}
+.btn-primary i{
+    padding-left: 10px;
+}
+.btn-primary:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 .text-description{
     color: var(--primary-color);
@@ -132,13 +140,16 @@ body{
 }
 .product-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 320px);
     gap: 20px;
 }
 .product-items .item{
     border-radius: 5px;
     background-color: #fff;    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 10px 20px;
+}
+.product-items .item img{
+    width: 100%;
 }
 .product-items .item h4{
     color: #18191F;
@@ -174,12 +185,100 @@ body{
     font-weight: 700;
 }
 
+/* Start featured product section */
+.featured-product{
+    padding: 50px 100px 0px;
+}
+.featured-product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1160px;
+    margin: 0 auto;
+}
+.left-img{
+    width: 45%;
+}
+.right-content{
+    width: 55%;
+}
+.right-content h2{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.right-content p{
+    color: #6C6C6C;
+    padding-right: 131px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.featured-btn{
+    border-radius: inherit;
+}
 /* Footer style section */
-
+.footer-section{
+    background: #0A0826; 
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+    max-width: 1160px;
+    margin: auto;
+    padding:100px;
+}
+.footer-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.footer-content p{
+    color:#D9DBE1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px; 
+}
+.footer-content .social-icon i{
+    border-radius: 50%;
+    border: 5px solid #2e2d2d;
+    margin: 20px 10px;
+}
 
 
 /* Responsive Devices */
 /* Small Devices */
-
+@media screen and (max-width: 576px){
+    .header-nav,.header-menu{
+        flex-direction: column;
+    }
+    .banner .left-content h1{
+        font-size: 40px;
+        line-height: normal;
+    }
+    .banner .left-content p{
+        padding-top: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner .right-img img{
+        width: 100%;
+    }
+    .our-sponsors{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    .product-items{
+        grid-template-columns: repeat(1, 250px);
+        gap: 20px;
+    }
+   
+}
 
 /* Medium Devices */
