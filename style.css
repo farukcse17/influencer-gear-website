@@ -1,15 +1,36 @@
 /* Shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-
-
+:root{
+    --primary-color: #3A3A3A;
+    --btn-bd-color: #E02C6D;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
 
 
 /* Header style section */
+.header-section{}
+.header-nav{}
+.header-nav h3{}
+.header-menu{}
+.header-menu li{}
+.header-menu li a{}
+.header-menu li a i{}
 
+.banner{}
+.banner .left-content{}
+.banner .left-content h1{}
+.banner .left-content p{}
+.banner .left-content button{}
+.banner .left-content button i{}
 
+.banner .right-img{}
+.banner .right-img img{}
 
 /* Main style section */
 
