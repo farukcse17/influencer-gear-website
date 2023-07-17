@@ -10,27 +10,94 @@
 }
 body{
     font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+.btn-primary{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--btn-bd-color);
+    border-radius: 41px;
+    border: none;
+    padding: 10px 20px;
+}
+.text-description{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
 }
 
-
 /* Header style section */
-.header-section{}
-.header-nav{}
-.header-nav h3{}
-.header-menu{}
-.header-menu li{}
-.header-menu li a{}
+.header-section{
+    max-width: 1440px;
+}
+.header-container{
+    max-width: 1192px;
+    margin: 80px auto;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav h3{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.header-menu{
+    display: flex;
+    
+}
+.header-menu li{
+    list-style: none;
+    margin-left: 30px;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
 .header-menu li a i{}
 
-.banner{}
-.banner .left-content{}
-.banner .left-content h1{}
-.banner .left-content p{}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: a;
+    margin-top: 40px;
+}
+.banner .left-content{
+    flex:50%;
+}
+.banner .left-content h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 70px;
+}
+.banner .left-content p{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
 .banner .left-content button{}
 .banner .left-content button i{}
 
-.banner .right-img{}
-.banner .right-img img{}
+.banner .right-img{
+    flex:50%;
+    overflow:hidden;
+    background:url('images/Circle\ design.svg') no-repeat center bottom;
+    background-size:contain;
+}
+.banner .right-img img{
+    display: block;
+    margin: 0 auto;
+}
 
 /* Main style section */
 
